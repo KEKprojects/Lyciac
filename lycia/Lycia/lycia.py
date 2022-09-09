@@ -11,7 +11,7 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
 translator = google_translator()
 
-BOT_ID = 1688991183
+BOT_ID = 2065617617
 
 def extract_emojis(s):
     return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
@@ -49,9 +49,9 @@ async def lycia(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Lycia")
-        result = result.replace("Eliza", "@Lyciachatbot")
-        result = result.replace("Hi~", "Hello Friend I Am @Lyciachatbot")
+        result = result.replace("Aco", "KEK")
+        result = result.replace("Okek", "@KEKxUbot")
+        result = result.replace("Hi~", "Halo Saya Teman Dari @kekXubot")
         result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @madepranav")
         result = result.replace("Have the control right.", "My Father Is @madepranav")
         result = result.replace("I was created by Lyciabot Team.", "I was created by @Techno_Ocean Team.")
@@ -93,8 +93,8 @@ async def lycia(client, message):
             rm = msg
             lan = translator.detect(rm)
         aura = rm
-        if not "en" in lan and not lan == "":
-            aura = translator.translate(aura, lang_tgt="en")
+        if not "id" in lan and not lan == "":
+            aura = translator.translate(aura, lang_tgt="id")
 
         aura = aura.replace("lycia", "Aco")
         aura = aura.replace("Lycia", "Aco")
@@ -112,16 +112,16 @@ async def lycia(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Lycia")
-        result = result.replace("Eliza", "@Lyciachatbot")
-        result = result.replace("Hi~", "Hello Friend I Am @Lyciachatbot")
+        result = result.replace("Aco", "KEK")
+        result = result.replace("Okek", "@KEKxUbot")
+        result = result.replace("Hi~", "Halo Saya Teman Dari @kekXubot")
         result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @madepranav")
         result = result.replace("Have the control right.", "My Father Is @madepranav")
         result = result.replace("I was created by Lyciabot Team.", "I was created by @Techno_Ocean Team.")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         red = result
-        if not "en" in lan and not lan == "":
+        if not "id" in lan and not lan == "":
             pro = translator.translate(red, lang_tgt=lan[0])
         try:
             await LYCIA.send_chat_action(message.chat.id, "typing")
@@ -165,11 +165,11 @@ async def redaura(client, message):
         rm = msg
         lan = translator.detect(rm)
     aura = rm
-    if not "en" in lan and not lan == "":
-        aura = translator.translate(aura, lang_tgt="en")
+    if not "id" in lan and not lan == "":
+        aura = translator.translate(aura, lang_tgt="id")
 
    
-    aura = aura.replace("lycia", "Aco")
+    aura = aura.replace("Lycia", "Aco")
     aura = aura.replace("Lycia", "Aco")
     querystring = {
         "bid": "178",
@@ -185,16 +185,16 @@ async def redaura(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "Lycia")
-    result = result.replace("Eliza", "@Lyciachatbot")
-    result = result.replace("Hi~", "Hello Friend I Am @Lyciachatbot")
+    result = result.replace("Aco", "KEK")
+    result = result.replace("Okek", "@KEKxUbot")
+    result = result.replace("Hi~", "Halo Saya Teman Dari @kekXubot")
     result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @madepranav")
     result = result.replace("Have the control right.", "My Father Is @madepranav")
     result = result.replace("I was created by Lyciabot Team.", "I was created by @Techno_Ocean Team.")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     red = result
-    if not "en" in lan and not lan == "":
+    if not "id" in lan and not lan == "":
         red = translator.translate(red, lang_tgt=lan[0])
     try:
         await LYCIA.send_chat_action(message.chat.id, "typing")
@@ -204,7 +204,7 @@ async def redaura(client, message):
 
 
 @LYCIA.on_message(
-    filters.regex("Lycia|lycia|LYCIA")
+    filters.regex("Okek|okek|OKEK")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -244,11 +244,11 @@ async def redaura(client, message):
         rm = msg
         lan = translator.detect(rm)
     aura = rm
-    if not "en" in lan and not lan == "":
-        aura = translator.translate(aura, lang_tgt="en")
+    if not "id" in lan and not lan == "":
+        aura = translator.translate(aura, lang_tgt="id")
 
 
-    aura = aura.replace("lycia", "Aco")
+    aura = aura.replace("Lycia", "Aco")
     aura = aura.replace("Lycia", "Aco")
     querystring = {
         "bid": "178",
@@ -264,16 +264,16 @@ async def redaura(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "Lycia")
-    result = result.replace("Eliza", "@Lyciachatbot")
-    result = result.replace("Hi~", "Hello Friend I Am @elianachatbot")
+    result = result.replace("Aco", "KEK")
+    result = result.replace("Okek", "@KEKxUbot")
+    result = result.replace("Hi~", "Halo Saya Teman Dari @kekXubot")
     result = result.replace("My dear great botmaster, Daisybot Team.", "Made By @madepranav")
     result = result.replace("Have the control right.", "My Father Is @madepranav")
     result = result.replace("I was created by Lyciabot Team.", "I was created by @Techno_Ocean Team.")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     pro = result
-    if not "en" in lan and not lan == "":
+    if not "id" in lan and not lan == "":
         red = translator.translate(red, lang_tgt=lan[0])
     try:
         await LYCIA.send_chat_action(message.chat.id, "typing")
