@@ -1,4 +1,0 @@
-class Config(object):
-    API_ID = int("6680952")
-    API_HASH = "c717492148c5ff7e716d8f5876708e7a"
-    TOKEN = "2065617617:AAGKiN1XB_UHwL_Xcbwv_GGLREJX0k8_v0M"
