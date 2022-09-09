@@ -1,20 +1,17 @@
 import asyncio
 import aiohttp
-import emoji
 import requests
 import re
 from lycia import LYCIA
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client, filters
-from google_trans_new import google_translator
+from gpytranslate import SyncTranslator
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
-translator = google_translator()
+translator = SyncTranslator()
 
 BOT_ID = 2065617617
 
-def extract_emojis(s):
-    return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
 
 #Chatbot Modules By  @InukaAsith
 
@@ -65,8 +62,7 @@ async def lycia(client, message):
             print(e)
     else:
         u = msg.split()
-        emj = extract_emojis(msg)
-        msg = msg.replace(emj, "")
+        msg = msg.replace("")
         if (
             [(k) for k in u if k.startswith("@")]
             and [(k) for k in u if k.startswith("#")]
@@ -137,8 +133,7 @@ async def redaura(client, message):
     if msg.startswith("/") or msg.startswith("@"):
         message.continue_propagation()
     u = msg.split()
-    emj = extract_emojis(msg)
-    msg = msg.replace(emj, "")
+    msg = msg.replace("")
     if (
         [(k) for k in u if k.startswith("@")]
         and [(k) for k in u if k.startswith("#")]
@@ -216,8 +211,7 @@ async def redaura(client, message):
     if msg.startswith("/") or msg.startswith("@"):
         message.continue_propagation()
     u = msg.split()
-    emj = extract_emojis(msg)
-    msg = msg.replace(emj, "")
+    msg = msg.replace("")
     if (
         [(k) for k in u if k.startswith("@")]
         and [(k) for k in u if k.startswith("#")]
